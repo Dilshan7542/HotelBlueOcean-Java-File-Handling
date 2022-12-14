@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="1000.0" styleClass="customer" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reception.CustomerFormController">
+   <left>
+      <AnchorPane opacity="0.16" prefHeight="456.0" prefWidth="61.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane opacity="0.13" prefHeight="444.0" prefWidth="35.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane opacity="0.26" prefHeight="0.0" prefWidth="1000.0" style="-fx-background-color: #2D3459;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <AnchorPane opacity="0.82" prefHeight="165.0" prefWidth="1000.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="cGetId" focusColor="#110e0e" labelFloat="true" layoutX="66.0" layoutY="50.0" prefHeight="16.0" prefWidth="104.0" promptText="Customer id" unFocusColor="#110d0d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="cGetName" focusColor="BLACK" labelFloat="true" layoutX="229.0" layoutY="50.0" prefHeight="30.0" prefWidth="127.0" promptText=" Name" unFocusColor="#110d0d" AnchorPane.leftAnchor="229.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="cGetEmail" focusColor="BLACK" labelFloat="true" layoutX="377.0" layoutY="50.0" prefColumnCount="15" prefHeight="5.0" prefWidth="117.0" promptText="Email" unFocusColor="BLACK" AnchorPane.rightAnchor="506.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="cGetAddress" focusColor="#171717" labelFloat="true" layoutX="524.0" layoutY="50.0" prefHeight="19.0" prefWidth="128.0" promptText="Address" unFocusColor="#070707" AnchorPane.rightAnchor="348.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="cGetNumber" focusColor="BLACK" labelFloat="true" layoutX="683.0" layoutY="50.0" prefHeight="16.0" prefWidth="128.0" promptText="Tel.Number" unFocusColor="#110d0d" AnchorPane.rightAnchor="189.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXButton layoutX="851.0" layoutY="99.0" onAction="#saveBtn" style="-fx-background-color: #2E34F2;" text="Save Customer" textFill="WHITE" AnchorPane.rightAnchor="31.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="15.0" layoutY="5.0" onAction="#btnBack" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: green;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="mainTable" opacity="0.89" prefHeight="444.0" prefWidth="885.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tID" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tName" prefWidth="123.0" text="Name" />
+            <TableColumn fx:id="tEmail" prefWidth="171.0" text="Email" />
+            <TableColumn fx:id="tAddress" prefWidth="189.0" text="Address" />
+            <TableColumn fx:id="tNumber" prefWidth="103.0" text="Number" />
+            <TableColumn fx:id="tBooking" prefWidth="106.0" text="Booking" />
+            <TableColumn fx:id="tEdit" prefWidth="62.0" text="Edit" />
+            <TableColumn fx:id="tDelete" prefWidth="74.0" text="Delete" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminForm.RoomController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="837.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/Room/1.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="sRoomID" layoutX="75.0" layoutY="58.0" prefHeight="25.0" prefWidth="96.0" promptText="Room Id">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="81.0" layoutY="38.0" prefHeight="17.0" prefWidth="87.0" text="Room Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="Room Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sRoomName" layoutX="201.0" layoutY="58.0" prefHeight="25.0" prefWidth="96.0" promptText="Room Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="339.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="Beds">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sRoomBeds" layoutX="335.0" layoutY="58.0" prefHeight="25.0" prefWidth="96.0" promptText="Beds">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="459.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="Bath">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sRoomBath" layoutX="454.0" layoutY="58.0" prefHeight="25.0" prefWidth="96.0" promptText="Bath">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Separator layoutX="54.0" layoutY="89.0" prefHeight="0.0" prefWidth="649.0" style="-fx-background-color: black;" />
+      <TextField fx:id="searchRoom" layoutX="107.0" layoutY="102.0" onAction="#searchRoom" prefHeight="25.0" prefWidth="491.0" promptText="Search" />
+      <Button fx:id="saveRoom" layoutX="688.0" layoutY="97.0" mnemonicParsing="false" onAction="#saveRoom" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: blue;" text="Save Room" textFill="WHITE" />
+      <TableView fx:id="mainTable" layoutX="25.0" layoutY="133.0" prefHeight="423.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="cRoomId" prefWidth="100.0" text="Id" />
+          <TableColumn fx:id="cRoomName" prefWidth="248.0" text="Room Name" />
+            <TableColumn fx:id="cRoomBeds" minWidth="0.0" prefWidth="68.0" text="Beds" />
+            <TableColumn fx:id="cRoomBath" prefWidth="69.0" text="Bath" />
+            <TableColumn fx:id="cRoomPrice" minWidth="0.0" prefWidth="115.0" text="Price" />
+            <TableColumn fx:id="cRoomEdit" prefWidth="59.0" text="Edit" />
+            <TableColumn fx:id="cRoomDelete" prefWidth="74.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Label layoutX="586.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="Price">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sRoomPrice" layoutX="579.0" layoutY="58.0" prefHeight="25.0" prefWidth="96.0" promptText="Price">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>

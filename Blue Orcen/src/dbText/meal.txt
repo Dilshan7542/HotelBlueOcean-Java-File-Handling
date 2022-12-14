@@ -1,0 +1,8 @@
+F001,Chinese,700.0/
+F002,Local,500.0/
+F003,Rashiyan,880.0/
+F004,French,1100.0/
+F005,Rice,350.0/
+F006,Parata,100.0/
+F007,Dolpine Koththu,500.0/
+F008,Full koththu,500.0/

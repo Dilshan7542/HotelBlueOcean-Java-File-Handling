@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainGrideForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="mainForm" stylesheets="@../css/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="187.66666412353516" minHeight="10.0" prefHeight="116.33332824707031" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="364.33333587646484" minHeight="10.0" prefHeight="321.6666564941406" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="196.0" minHeight="0.0" prefHeight="52.333343505859375" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane opacity="0.66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <AnchorPane opacity="0.66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+         <children>
+            <JFXButton layoutX="59.0" layoutY="33.0" prefHeight="72.0" prefWidth="242.0" style="-fx-background-color: #00ff54;" text="Add Food and Bevarage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.95" prefHeight="336.0" prefWidth="400.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TableView layoutX="11.0" layoutY="35.0" prefHeight="261.0" prefWidth="363.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Item Code" />
+                  <TableColumn prefWidth="204.33331298828125" text="Description" />
+                  <TableColumn prefWidth="85.66668701171875" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="60.0" layoutY="33.0" prefHeight="72.0" prefWidth="242.0" style="-fx-background-color: #ea09a1;" text="Add Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.95" prefHeight="365.0" prefWidth="477.0" style="-fx-background-color: white;" GridPane.rowIndex="1">
+         <children>
+            <TableView layoutX="24.0" layoutY="35.0" prefHeight="261.0" prefWidth="355.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Item Code" />
+                <TableColumn prefWidth="201.6666717529297" text="Description" />
+                  <TableColumn prefWidth="88.33332824707031" text="Price" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="2" />
+      <AnchorPane opacity="0.66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <JFXButton layoutX="277.0" layoutY="15.0" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #ed1c1c;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
